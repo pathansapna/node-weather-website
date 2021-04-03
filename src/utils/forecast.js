@@ -10,7 +10,7 @@ const url = 'http://api.weatherstack.com/current?access_key=314ac3ccc1c67b528c70
 
         }else{
 
-            callback(undefined, 'It is currently ' + body.current.temperature + ' degrees out. It feels like ' +body.current.feelslike  + ' degrees out.');
+            callback(undefined, 'It is currently ' + body.current.temperature + ' degrees out. It feels like ' +body.current.feelslike  + ' degrees out. There humidity is ' +body.current.humidity+ ' and the local time is ' +body.location.localtime+ '.');
 
         }
     })
